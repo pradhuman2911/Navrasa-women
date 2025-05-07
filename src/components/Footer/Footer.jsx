@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaPhoneAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -18,8 +18,12 @@ const Footer = () => {
             Empowering Women in Technology through innovative IT solutions and community support.
           </p>
           <div className="flex items-center gap-2 text-sm text-gray-300">
+            <FaPhoneAlt  />
+            <span>+91 6377067867</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-300">
             <FaMapMarkerAlt />
-            <span>Jaipur, Rajasthan, India</span>
+            <span>Shyam nagar, Jaipur, Rajasthan, India</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-gray-300 mt-1">
             <FaEnvelope />
@@ -85,6 +89,16 @@ const Footer = () => {
                 <FaInstagram />
               </motion.a>
               <motion.a
+                href="https://x.com/NavrasaIT"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-500 transition duration-300"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaTwitter />
+              </motion.a>
+              <motion.a
                 href="https://www.linkedin.com/company/navrasa-it-solutions/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,17 +110,17 @@ const Footer = () => {
               </motion.a>
             </div>
           </motion.div>
+        </div>
+      </div>
 
           <motion.p
-            className="text-center text-sm text-indigo-300 mt-6 md:mt-0"
+            className="text-center text-sm text-indigo-300 pt-10 mt-6 md:mt-0 "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
           >
-            © 2025 <strong>Navrasa IT Solutions</strong> — Women in Tech.<br/> Crafted with intention for equity in tech ✨
+            © 2025 <strong>Navrasa IT Solutions</strong> — Women in Tech. Crafted with intention for equity in tech ✨
           </motion.p>
-        </div>
-      </div>
     </footer>
   );
 };

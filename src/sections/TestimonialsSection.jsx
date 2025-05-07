@@ -172,37 +172,6 @@ export default function TestimonialsSection() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(158, 62, 247, 0.3)" }}
-              className="bg-[#2e265d] p-6 rounded-lg cursor-pointer"
-              onClick={() => handleDotClick(index)}
-            >
-              <p className="text-purple-100 text-sm line-clamp-3 mb-4 italic">
-                "{testimonial.text.substring(0, 80)}..."
-              </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                  <img 
-                    src={testimonial.avatar} 
-                    alt={testimonial.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-xs text-purple-300">{testimonial.role}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );

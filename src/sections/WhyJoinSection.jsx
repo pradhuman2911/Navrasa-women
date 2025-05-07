@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaHandsHelping, FaBrain, FaUserFriends, FaRocket, FaChalkboardTeacher } from "react-icons/fa";
+import { FaHandsHelping, FaBrain, FaUserFriends, FaRocket, FaChalkboardTeacher,FaTools  } from "react-icons/fa";
 
 const features = [
   { icon: <FaHandsHelping size={30} />, title: "Supportive Mentorship", text: "Get paired with experienced women in tech who understand the path you're walking." },
@@ -7,6 +7,7 @@ const features = [
   { icon: <FaRocket size={30} />, title: "Career Acceleration", text: "Get help with interviews, resumes, and referrals to top companies." },
   { icon: <FaBrain size={30} />, title: "Mental Health & Well-being", text: "We hold safe-space conversations and wellness meetups." },
   { icon: <FaUserFriends size={30} />, title: "Community You Can Count On", text: "Join Slack groups, online meetups, and local circles across India." },
+  { icon: <FaTools size={30} />, title: "Technology Enablement", text: "Get access to the latest tools, frameworks, and resources to stay ahead in today’s fast-paced tech landscape." },
 ];
 
 export default function WhyJoinSection() {

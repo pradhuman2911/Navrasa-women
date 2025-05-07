@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const programs = [
-  { title: "Mentorship Circles", desc: "Curated mentorship experiences for early-career and mid-level professionals." },
-  { title: "Learning Labs", desc: "Hands-on workshops on AI, UI/UX, full stack dev, cybersecurity, and more." },
-  { title: "Internship & Job Referrals", desc: "Access to exclusive openings within Navrasa and partner companies." },
-  { title: "Community Dialogues", desc: "Monthly events featuring women leaders, tech founders, and changemakers." },
+  { title: "1. Mentorship Circles", desc: "Curated mentorship experiences for early-career and mid-level professionals." },
+  { title: "2. Learning Labs", desc: "Hands-on workshops on AI, UI/UX, full stack dev, cybersecurity, and more." },
+  { title: "3. Internship & Job Referrals", desc: "Access to exclusive openings within Navrasa and partner companies." },
+  { title: "4. Community Dialogues", desc: "Monthly events featuring women leaders, tech founders, and changemakers." },
 ];
 
 export default function ProgramsSection() {
